@@ -1,0 +1,40 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cinema{
+  display: flex;
+  flex-direction: column;
+  background: rgb(36,35,51);
+  .cinema-row{
+    display: inline-flex;
+    .cinema-seat{
+      background: rgb(68,68,81);
+      width: 40px;
+      height: 40px;
+      margin: 8px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+    .cinema-seat-selected{
+      background: white;
+      width: 40px;
+      height: 40px;
+      margin: 8px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .cinema-seat.cinema-seat-selected{
+      background: rgb(111,234,246);
+    }
+  }
+}

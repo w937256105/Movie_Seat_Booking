@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh; }
+
+.cinema {
+  display: flex;
+  flex-direction: column;
+  background: #242333; }
+  .cinema .cinema-row {
+    display: inline-flex; }
+    .cinema .cinema-row .cinema-seat {
+      background: #444451;
+      width: 40px;
+      height: 40px;
+      margin: 8px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px; }
+      .cinema .cinema-row .cinema-seat:hover {
+        cursor: pointer;
+        transform: scale(1.2); }
+    .cinema .cinema-row .cinema-seat-selected {
+      background: white;
+      width: 40px;
+      height: 40px;
+      margin: 8px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px; }
+    .cinema .cinema-row .cinema-seat.cinema-seat-selected {
+      background: #6feaf6; }
+
+/*# sourceMappingURL=style.css.map */
